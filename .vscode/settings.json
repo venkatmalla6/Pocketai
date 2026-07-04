@@ -1,0 +1,5 @@
+{
+    "jest.jestCommandLine": "yarn jest",
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.compile.nullAnalysis.mode": "automatic"
+}

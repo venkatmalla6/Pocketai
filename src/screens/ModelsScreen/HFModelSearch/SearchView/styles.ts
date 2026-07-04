@@ -1,0 +1,206 @@
+import {StyleSheet} from 'react-native';
+import {Theme} from '../../../../utils/types';
+
+export const createStyles = (theme: Theme, bottomInset: number) =>
+  StyleSheet.create({
+    contentContainer: {
+      flex: 1,
+    },
+    list: {
+      padding: 16,
+      paddingBottom: 16,
+    },
+    divider: {
+      marginVertical: 12,
+    },
+    modelAuthor: {
+      fontSize: 14,
+      color: theme.colors.onSurfaceVariant,
+      marginBottom: 2,
+    },
+    modelNameContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      marginBottom: 4,
+      flexWrap: 'wrap',
+    },
+    modelName: {
+      fontSize: 16,
+      fontWeight: '500',
+      color: theme.colors.onSurface,
+    },
+    statsContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: 12,
+    },
+    statItem: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: 4,
+    },
+    statText: {
+      fontSize: 12,
+      color: theme.colors.onSurfaceVariant,
+    },
+    noResultsText: {
+      textAlign: 'center',
+      marginTop: 20,
+      fontSize: 16,
+      color: theme.colors.onSurfaceVariant,
+    },
+    searchbarContainer: {
+      position: 'absolute',
+      bottom: Math.max(bottomInset, 20) + 10,
+      left: 10,
+      right: 10,
+      backgroundColor: theme.colors.surface,
+      borderRadius: 8,
+      elevation: 8,
+      shadowColor: '#000',
+      shadowOffset: {
+        width: 0,
+        height: 4,
+      },
+      shadowOpacity: 0.3,
+      shadowRadius: 8,
+      zIndex: 1000,
+    },
+    loadingMoreText: {
+      textAlign: 'center',
+      padding: 16,
+      fontSize: 14,
+      color: theme.colors.onSurfaceVariant,
+    },
+    gatedChipText: {
+      fontSize: 10,
+    },
+    emptyStateContainer: {
+      alignItems: 'center',
+      justifyContent: 'center',
+      marginTop: 20,
+      marginBottom: 20,
+      padding: 16,
+      borderWidth: 1,
+      borderColor: theme.colors.outline,
+      borderRadius: 8,
+      backgroundColor: theme.colors.surfaceVariant,
+      width: '90%',
+      alignSelf: 'center',
+    },
+    errorText: {
+      color: theme.colors.error,
+      marginTop: 8,
+    },
+    errorHintText: {
+      color: theme.colors.onSurfaceVariant,
+      marginTop: 8,
+      textAlign: 'center',
+      fontSize: 14,
+      fontStyle: 'italic',
+      paddingHorizontal: 20,
+    },
+    disableTokenButton: {
+      marginTop: 10,
+      alignSelf: 'center',
+    },
+    searchbarTop: {
+      margin: 16,
+      marginBottom: 8,
+      backgroundColor: theme.colors.surface,
+      borderRadius: 8,
+      elevation: 4,
+      shadowColor: '#000',
+      shadowOffset: {
+        width: 0,
+        height: 2,
+      },
+      shadowOpacity: 0.25,
+      shadowRadius: 4,
+    },
+    listWithBottomSpace: {
+      padding: 16,
+      paddingBottom: 80, // Space for search bar at bottom
+    },
+    searchbarBottomContainer: {
+      position: 'absolute',
+      bottom: Math.max(bottomInset, 10),
+      left: 0,
+      right: 0,
+      backgroundColor: 'transparent',
+      paddingHorizontal: 16,
+      paddingVertical: 8,
+      zIndex: 9999,
+      elevation: 20,
+    },
+    searchbarBottom: {
+      backgroundColor: theme.colors.surface,
+      borderRadius: 8,
+      elevation: 15,
+      shadowColor: '#000',
+      shadowOffset: {
+        width: 0,
+        height: 6,
+      },
+      shadowOpacity: 0.4,
+      shadowRadius: 10,
+      borderWidth: 1,
+      borderColor: theme.colors.outline,
+    },
+    scrollContent: {
+      flexGrow: 1,
+      paddingBottom: 0,
+    },
+    searchContainer: {
+      padding: 16,
+      backgroundColor: theme.colors.surface,
+      borderBottomWidth: 1,
+      borderBottomColor: theme.colors.outline,
+    },
+    searchInputContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      backgroundColor: theme.colors.surfaceVariant,
+      borderRadius: 8,
+      paddingHorizontal: 12,
+      paddingVertical: 8,
+      borderWidth: 1,
+      borderColor: theme.colors.outline,
+    },
+    searchIcon: {
+      marginRight: 8,
+    },
+    searchInput: {
+      flex: 1,
+      fontSize: 16,
+      color: theme.colors.onSurface,
+      padding: 0,
+    },
+    modelsContainer: {
+      paddingHorizontal: 16,
+      paddingTop: 0,
+      paddingBottom: 0,
+    },
+    modelCard: {
+      backgroundColor: theme.colors.surface,
+      borderRadius: 15,
+      marginBottom: 15,
+      padding: 16,
+      elevation: 2,
+      shadowColor: '#000',
+      shadowOffset: {
+        width: 0,
+        height: 1,
+      },
+      shadowOpacity: 0.2,
+      shadowRadius: 2,
+      borderWidth: 1,
+      borderColor: theme.colors.outline,
+    },
+    loadingText: {
+      textAlign: 'center',
+      padding: 20,
+      fontSize: 16,
+      color: theme.colors.onSurfaceVariant,
+    },
+  });
